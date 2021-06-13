@@ -1,0 +1,254 @@
+/*
+Theme Name: Suki Child 2
+Theme URI: https://sukiwp.com/
+Description: Sample Child Theme for Suki WordPress theme. Learn more about Suki WordPress theme at https://sukiwp.com/
+Author: Suki WordPress Theme
+Author URI: https://sukiwp.com/#about
+Template: suki
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: suki-child
+Tags: two-columns, left-sidebar, right-sidebar, grid-layout, accessibility-ready, custom-colors, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
+*/
+
+
+/*========= Header =========*/
+
+
+/*Make Header Sticky*/
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/*Adjust Content Padding*/
+
+
+/*Adjust Content Padding for Mobile*/
+
+@media (max-width: 800px) {
+    .site-content {
+        padding-top: 175px;
+    }
+}
+
+
+/*Adjust Content Padding for Mobile*/
+
+@media (max-width: 650px) {
+    .site-content {
+        padding-top: 200px;
+    }
+}
+
+
+/*========= Navigation =========*/
+
+.suki-header-main-bar .menu>.menu-item .sub-menu {
+    border-radius: 10px;
+    border: 0px;
+    background-color: #fff;
+    top: 65px
+}
+
+.suki-page-header {
+    position: relative;
+}
+
+.suki-menu-item-title {
+    font-size: 20px;
+}
+
+.suki-menu-item-title:hover {
+    color: #fe0000;
+}
+
+
+/*========= Links =========*/
+
+a img:not([alt="logo Coquellicot"]) {
+    opacity: 0.5;
+}
+
+a img:hover {
+    opacity: 1.0;
+}
+
+
+/*========= Buttons =========*/
+
+.button,
+a.button,
+a.wp-block-button__link,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: #73ab95;
+    border-radius: 0px;
+    border-color: #73ab95;
+    box-shadow: -3.85px 3.2px 0 #d60101;
+    margin: 10px 0px 10px 0px;
+}
+
+.button:focus,
+.button:hover,
+a.button:focus,
+a.button:hover,
+a.wp-block-button__link:focus,
+a.wp-block-button__link:hover,
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+a.active-button {
+    background-color: #4f705a;
+    border-color: #4f705a;
+    color: #fff;
+}
+
+a.wp-block-button__link.is-style-drop {
+    background-color: #fff;
+    border-color: #73ab95;
+    color: #73ab95;
+    border-radius: 50px;
+    border: solide;
+    border-width: 3px;
+    box-shadow: none;
+}
+
+a.wp-block-button__link.is-style-drop:hover,
+a.wp-block-button__link.is-style-drop:focus {
+    background-color: #b0cfbb;
+    border-color: #b0cfbb;
+    color: #fff;
+}
+
+
+/*======== Additional classes and names for block =========*/
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 5px 20px 5px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    background-color: #73ab95;
+    color: #ffffff;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.19);
+    margin: 0px 0px 30px 0px;
+    padding: 7px 12px 7px 12px;
+}
+
+.displayable-text {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 10px 20px 10px;
+    transition: height .6s;
+    display: none;
+}
+
+
+/*Dropdown menu*/
+
+#myInput {
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropbtn {
+    margin-bottom: 3.2px !important;
+    position: relative;
+    display: inline-block;
+    min-width: 214px;
+}
+
+.dropdown-content {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 214px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: .6s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #b0cfbb;
+}
+
+.show {
+    display: block;
+}
+
+
+/*======== Adjustements =========*/
+
+div.alignfull {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.entry-thumbnail {
+    display: none;
+}
+
+.entry-content>* {
+    margin-bottom: 0.5em;
+}
+
+.wp-block-group.has-background {
+    padding: 3em 3.5em;
+}
+
+.suki-page-header-title {
+    text-shadow: -2.85px 2.2px 0 #e07872, 2.85px -2.2px #b0cfbb;
+}
+
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
